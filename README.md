@@ -1,8 +1,10 @@
 # Module: MMM-Tesla
 The `MMM-Tesla` module is a <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a> addon. This
-is just an early prototype, supporting one vehicle only.
-This module displays your <a href="https://www.tesla.com">Tesla's</a> data on your Mirror. It uses
+is just an early prototype, supporting one vehicle only - displaying a location of the car, shift state and battery level in percentage.
+This module displays some of your <a href="https://www.tesla.com">Tesla's</a> data on your Mirror. It uses
 the unofficial Tesla JSON API from https://timdorr.docs.apiary.io
+
+![alt Preview](https://raw.githubusercontent.com/janhenrik/pics/master/tesla.png)
 
 ## Installing the module
 run `git clone https://github.com/janhenrik/MMM-Tesla.git` from inside your `MagicMirror/modules` folder
