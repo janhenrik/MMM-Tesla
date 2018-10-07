@@ -33,6 +33,9 @@ module.exports = NodeHelper.create({
 	  },
 	  auth: {
 	    tokenHost: 'https://owner-api.teslamotors.com/oauth/token'
+	  },
+	  http: {
+	  	headers: { 'User-Agent': 'MMM-Tesla' }
 	  }
 	};
 
@@ -64,7 +67,7 @@ module.exports = NodeHelper.create({
 			request({
 				url: base_data_url + '/data_request/charge_state',
 				method: 'GET',
-				headers: { 'Authorization': "Bearer " + accessToken.token.access_token, 'Content-type': "application/json; charset=utf-8" }
+				headers: { 'Authorization': "Bearer " + accessToken.token.access_token, 'Content-type': "application/json; charset=utf-8", 'User-Agent': 'MMM-Tesla' }
 			}, function (error, response, body) {
 	  			console.log('body:', body); // Print the HTML 
 				if (!error && response.statusCode == 200) {
