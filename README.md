@@ -7,7 +7,7 @@ the unofficial Tesla JSON API from https://timdorr.docs.apiary.io
 ![alt Preview](https://raw.githubusercontent.com/janhenrik/pics/master/tesla.png)
 
 ## Installing the module
-run `git clone https://github.com/janhenrik/MMM-Tesla.git` from inside your `MagicMirror/modules` folder
+run `git clone https://github.com/janhenrik/MMM-Tesla.git` from inside your `MagicMirror/modules` folder. Then run `npm install` to install dependencies.
 
 
 ## Using the module
