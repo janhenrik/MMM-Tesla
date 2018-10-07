@@ -77,7 +77,7 @@ module.exports = NodeHelper.create({
 					request({
 						url: base_data_url + '/data_request/drive_state',
 						method: 'GET',
-						headers: { 'Authorization': "Bearer " + accessToken.token.access_token, 'Content-type': "application/json; charset=utf-8" }
+						headers: { 'Authorization': "Bearer " + accessToken.token.access_token, 'Content-type': "application/json; charset=utf-8", 'User-Agent': 'MMM-Tesla' }
 					}, function (error, response, body) {
 						console.log('body2:', body);
 						self.drivestate_data = body;
